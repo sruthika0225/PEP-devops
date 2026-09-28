@@ -232,17 +232,22 @@ Database
 
 # Microservices Architecture
 
-Microservices architecture breaks an application into smaller, independently developed services.
+In a microservices architecture, the application is divided into multiple small and independent services.
 
-Example:
+Each microservice performs a specific function and can have its **own database**.
 
-```text
-                 UI
-          /       |                ↓        ↓        ↓
-   Microservice Microservice Microservice
-       ↓            ↓           ↓
-      DB           DB          DB
-```
+
+                              UI
+                          /    |    \
+                         ↓     ↓     ↓
+                  ┌───────────┐ ┌───────────┐ ┌───────────┐
+                  │   Micro   │ │   Micro   │ │   Micro   │
+                  │  service  │ │  service  │ │  service  │
+                  └─────┬─────┘ └─────┬─────┘ └─────┬─────┘
+                        ↓              ↓              ↓
+                     ┌────┐         ┌────┐         ┌────┐
+                     │ DB │         │ DB │         │ DB │
+                     └────┘         └────┘         └────┘
 
 ### Microservice Concept
 
