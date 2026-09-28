@@ -1,4 +1,4 @@
-# PEP DevOps — Day 01
+# PEP DevOps — Day 02
 **Date:** 28 September 2026
 
 ## 1. Git Basics
